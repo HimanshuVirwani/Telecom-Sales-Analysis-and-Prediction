@@ -20,7 +20,7 @@ End-to-end solution to analyze and predict customer churn using:
 ## 🖥️ Power BI Dashboards
 
 ### Summary Dashboard
-[![Summary Dashboard](https://github.com/HimanshuVirwani/Telecom-Sales-Analysis-and-Prediction/blob/main/Summary.png)
+![Summary Dashboard](https://github.com/HimanshuVirwani/Telecom-Sales-Analysis-and-Prediction/blob/main/Summary.png)
 
 **Key Features**:
 - Churn by contract type (Month-to-month: 46.5%)
@@ -33,7 +33,7 @@ End-to-end solution to analyze and predict customer churn using:
 ## Service impact: Fiber optic (41.1% churn)
 
 ### Prediction Dashboard
-![Prediction Dashboard](https://app.powerbi.com/groups/me/reports/9dd6c00c-fade-4972-84bf-815002f6e258/ReportSection?experience=power-bi)
+![Prediction Dashboard](https://github.com/HimanshuVirwani/Telecom-Sales-Analysis-and-Prediction/blob/main/Prediction.png)
 
 **High-Risk Profiles**:
 - **States**: Uttar Pradesh, Maharashtra
