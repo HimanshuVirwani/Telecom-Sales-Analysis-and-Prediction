@@ -1,4 +1,4 @@
-```markdown
+
 # Telecom Sales Analysis and Prediction
 
 ## 📌 Overview
@@ -20,7 +20,7 @@ End-to-end solution to analyze and predict customer churn using:
 ## 🖥️ Power BI Dashboards
 
 ### Summary Dashboard
-![Summary Dashboard](https://via.placeholder.com/600x300?text=Summary+Dashboard)
+![Summary Dashboard]([https://via.placeholder.com/600x300?text=Summary+Dashboard](https://app.powerbi.com/groups/be2aa4bc-38c9-4713-afd7-a298436d32f7/reports/9dd6c00c-fade-4972-84bf-815002f6e258/ReportSection?experience=power-bi)
 
 **Key Features**:
 - Churn by contract type (Month-to-month: 46.5%)
@@ -30,7 +30,6 @@ End-to-end solution to analyze and predict customer churn using:
   Dissatisfaction 300
   Price         196
 
-```
 ## Service impact: Fiber optic (41.1% churn)
 
 ### Prediction Dashboard
