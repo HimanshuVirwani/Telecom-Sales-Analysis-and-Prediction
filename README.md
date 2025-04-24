@@ -1,9 +1,7 @@
-Here's a **complete, copy-paste ready** `README.md` file with all your project details integrated:
-
 ```markdown
-# Customer Churn Analysis - Power BI Dashboard
+# Telecom Sales Analysis and Prediction
 
-## 📌 Overview
+##📌 Overview
 End-to-end solution to analyze and predict customer churn using:
 - **PostgreSQL** (Data Engineering)
 - **Python** (Machine Learning)
@@ -14,12 +12,12 @@ End-to-end solution to analyze and predict customer churn using:
 - 27.0% Churn Rate
 - 377 Predicted High-Risk Customers
 
-## 📂 Data Pipeline
+##📂 Data Pipeline
 1. **PostgreSQL**: Raw data → Cleaned tables (`prod_churn`) → Analysis views (`vw_ChurnData`, `vw_JoinData`)
 2. **Python**: Random Forest model predicts churn → Exports to `Predictions.csv`
 3. **Power BI**: Connects to SQL views + CSV → Interactive dashboards
 
-## 🖥️ Power BI Dashboards
+##🖥️ Power BI Dashboards
 
 ### Summary Dashboard
 ![Summary Dashboard](https://via.placeholder.com/600x300?text=Summary+Dashboard)
@@ -32,7 +30,7 @@ End-to-end solution to analyze and predict customer churn using:
   Dissatisfaction 300
   Price         196
   ```
-- Service impact: Fiber optic (41.1% churn)
+-Service impact: Fiber optic (41.1% churn)
 
 ### Prediction Dashboard
 ![Prediction Dashboard]([https://via.placeholder.com/600x300?text=Prediction+Dashboard](https://app.powerbi.com/groups/me/reports/9dd6c00c-fade-4972-84bf-815002f6e258/ReportSection?experience=power-bi))
@@ -42,9 +40,9 @@ End-to-end solution to analyze and predict customer churn using:
 - **Contracts**: Month-to-month (72% of predicted churn)
 - **Revenue at Risk**: $42.5K (377 customers)
 
-## ⚙️ Technical Implementation
+##⚙️ Technical Implementation
 
-### SQL (PostgreSQL)
+###SQL (PostgreSQL)
 ```sql
 -- Data Cleaning
 INSERT INTO prod_churn 
@@ -60,7 +58,7 @@ SELECT * FROM prod_churn
 WHERE customer_status IN ('Stayed','Churned');
 ```
 
-### Python (Machine Learning)
+###Python (Machine Learning)
 ```python
 # Model Training
 rf_model = RandomForestClassifier(n_estimators=100)
@@ -70,7 +68,7 @@ rf_model.fit(X_train, y_train)
 original_data[original_data['Predicted_Churn'] == 1].to_csv('Predictions.csv')
 ```
 
-### Power BI Measures
+###Power BI Measures
 ```dax
 Total Customers = COUNT(prod_Churn[Customer_ID])
 Churn Rate = DIVIDE([Total Churn], [Total Customers])
@@ -79,14 +77,14 @@ Count Predicted Churner = COUNT(Predictions[Customer_ID]) + 0
 Title Predicted Churners = “COUNT OF PREDICTED CHURNERS : ” & COUNT(Predictions[Customer_ID])
 ```
 
-## 🚀 Setup Guide
+##🚀 Setup Guide
 
-### 1. Database Setup
+###1. Database Setup
 ```bash
 psql -U username -d dbname -f setup.sql
 ```
 
-### 2. Python Requirements
+###2. Python Requirements
 ```bash
 pip install -r requirements.txt
 ```
@@ -97,14 +95,14 @@ scikit-learn==0.24.2
 joblib==1.0.1
 ```
 
-### 3. Power BI Connection
+###3. Power BI Connection
 1. Connect to PostgreSQL server
 2. Import:
    - `vw_ChurnData`
    - `vw_JoinData`
    - `Predictions.csv`
 
-## 📈 Key Insights
+##📈 Key Insights
 1. **Top Churn Drivers**:
    - Month-to-month contracts (46.5% churn)
    - Fiber optic users (41.1% churn)
